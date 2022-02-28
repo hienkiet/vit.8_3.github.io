@@ -1,0 +1,15 @@
+:root {
+    background-image: url('https://previews.123rf.com/images/doucefleur/doucefleur1502/doucefleur150200013/36208046-%E3%83%90%E3%83%A9%E8%B5%A4%E3%81%84%E6%84%9B%E5%BF%83%E3%83%90%E3%83%AC%E3%83%B3%E3%82%BF%E3%82%A4%E3%83%B3%E8%83%8C%E6%99%AF%E3%81%BC%E3%81%8B%E3%81%97%E3%83%94%E3%83%B3%E3%81%BC%E3%81%91%E5%8A%B9%E6%9E%9C%E5%85%89%E7%94%98%E3%81%84%E5%A3%81%E7%B4%99.jpg');
+    background-size: 100%;
+}
+
+.parent {
+    position: relative;
+}
+
+.above-fold {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
