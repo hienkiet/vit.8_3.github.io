@@ -1,7 +1,7 @@
 var to = nameGirl;
 var gift_url = giftUrl;
 var gift_image_url = giftImage || giftImageBase64;
-// var gift_background = giftBg || giftBgBase64;
+// var gift_image_url = '';
 
 var nametag = document.getElementById("nametag");
 var present = document.getElementById("present");
@@ -13,7 +13,7 @@ function init() {
     document.querySelector('#card .title-card').innerHTML = `💘${titleCard}💘`;
     document.querySelector('#card .content-card').innerHTML = `${contentCard}`;
     document.querySelector('#card .honey').setAttribute('src', `${giftImage}`);
-    // document.querySelector('#card .honey').setAttribute('src', `${giftBg}`);
+
     var _giftLink,
         _giftImg;
 
@@ -37,8 +37,9 @@ function init() {
     present.addEventListener("click", function(e) {
         present.classList.toggle("open");
         document.getElementById('card').classList.add('card-show');
-        present.classList.toggle("hidden");
     }, false);
+
+
 
     nametag.innerText = to;
 }
